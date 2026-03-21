@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           spacing: 16,
           children: [
-            SizedBox(height: 16, child: Container(color: Colors.red)),
+            SizedBox(height: 16),
             const Text(
               'Saldo:',
               style: TextStyle(
