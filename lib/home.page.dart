@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'account.page.dart';
 import 'extends.dart';
+import 'profile.page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -82,6 +83,13 @@ class _HomePageState extends State<HomePage> {
                   context.go(MyAccountPage.path);
                 },
                 child: Text('Mi cuenta'),
+              ),
+              ElevatedButton(
+                onPressed: () async {
+                  // Navigator.pushNamed(context, MyAccountPage.path);
+                  context.go(UserProfilePage.path);
+                },
+                child: Text('Mi perfil'),
               ),
             ],
           ),
